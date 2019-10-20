@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Ocorrrencia extends Model
+class Ocorrencia extends Model
 {
 
     protected $fillable = [
@@ -17,9 +17,9 @@ class Ocorrrencia extends Model
     	return [
     		'latitude' => ['required', 'numeric'],
     		'longitude' => ['required', 'numeric'],
-    		'tamanho_esperado' => ['nullable'];
+    		'tamanho_esperado' => ['nullable'],
 
-    	]
+    	];
     }
 
 

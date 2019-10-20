@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateOcorrrenciasTable extends Migration
+class CreateOcorrenciasTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateOcorrrenciasTable extends Migration
      */
     public function up()
     {
-        Schema::create('ocorrrencias', function (Blueprint $table) {
+        Schema::create('ocorrencias', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->double('latitude', 15, 10);
             $table->double('longitude', 15, 10);
@@ -29,6 +29,6 @@ class CreateOcorrrenciasTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('ocorrrencias');
+        Schema::dropIfExists('ocorrencias');
     }
 }
